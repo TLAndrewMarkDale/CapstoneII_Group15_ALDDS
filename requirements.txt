@@ -1,0 +1,8 @@
+fpdf2
+opencv-python
+tk
+pillow
+djitellopy
+ultralytics
+torch
+pynput
