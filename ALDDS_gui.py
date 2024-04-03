@@ -1020,6 +1020,7 @@ class DroneGUI:
             self.enable_cv_queue.get()
         if self.detect:
             detections = model(cv2image)[0] # what is detected in the frame
+            print(device)
             for detect in detections.boxes.data.tolist():
                 confidence = detect[4] 
                 # If the confidence of the model is below 30%, skip it
